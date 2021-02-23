@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "cl.exe build - x64",
+        "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe",
+        "args": [
+          "/MTd",
+          "/EHsc",
+          "/Zi",
+          "/Fo:",
+          "build/",
+          "/Fe:",
+          "bin/simtool.exe",
+          "main.cpp",
+          "User32.lib",
+          "Gdi32.lib",
+          "shlwapi.lib",
+          "Shell32.lib",
+          "wsock32.lib",
+          "Comctl32.lib",
+          "MSImg32.Lib",
+          "Comdlg32.lib",
+        ],
+        "problemMatcher": ["$msCompile"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "type": "shell",
+        "label": "cl.exe build - x86",
+        "command": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x86/cl.exe",
+        "args": [
+          "/MT",
+          "/EHsc",
+          "/Zi",
+          "/Fo:",
+          "build-x86/",
+          "/Fe:",
+          "bin/simtool.exe",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/User32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/Gdi32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/shlwapi.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/Comctl32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/Shell32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/kernel32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/MSImg32.Lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/Comdlg32.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/wsock32.lib",
+          "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/lib/x86/libcpmt.lib",
+          "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/lib/x86/libcmt.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/ucrt/x86/libucrt.lib",
+          "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/lib/x86/libvcruntime.lib",
+          "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/lib/x86/libconcrt.lib",
+          "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x86/Uuid.Lib",
+          "/link",
+          "/MACHINE:X86"
+        ],
+        "problemMatcher": ["$msCompile"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+    ]
+}
