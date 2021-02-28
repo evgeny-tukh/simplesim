@@ -3,10 +3,13 @@
         {
             "name": "Win32",
             "includePath": [
+                "C:\\Users\\jecat\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**",
+                "C:\\Users\\jecat\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\sam\\1.6.12\\**",
                 "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\include\\",
                 "C:\\Users\\jecat\\source\\repos\\libxl-3.9.2.4\\include_cpp\\"
             ],
-            "forcedInclude": [],
+            "forcedInclude": [
+            ],
             "intelliSenseMode": "msvc-x64",
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x86/cl.exe",
             "cStandard": "c11",
